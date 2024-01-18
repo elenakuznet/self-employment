@@ -1,0 +1,48 @@
+.btn-danger {
+    padding: 13px 68px;
+    border-radius: 4px;
+    background: #ED5338;
+    box-shadow: 0px 8px 24px -4px rgba(18, 20, 23, 0.08), 0px 6px 12px -6px rgba(18, 20, 23, 0.12);
+}
+
+/* .bg-secondary {
+    background-color: #C59368;
+} */
+
+.header {
+    margin-bottom: 39px;
+}
+
+section {
+    background-color: #C59368;
+}
+
+footer {
+    background-color: #C59368;
+}
+
+.banner {
+    background-image: url('img/banner-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 24px 24px 40px 24px;
+}
+
+.banner__item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.contact {
+    color: #562212;
+}
+
+.navbar-nav,
+.mr-auto {
+flex: 1;
+margin: auto !important;
+display: flex;
+justify-content: space-between;
+}
