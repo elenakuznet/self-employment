@@ -1,0 +1,30 @@
+.emploiment {
+    padding: 38px 0;
+}
+
+.emploiment__row {
+    margin-bottom: 20px;
+}
+
+.emploiment__text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17.6px;
+}
+
+
+@media (max-width: 480px) {
+    .emploiment {
+        padding: 27px 0;
+    }
+    
+    .emploiment__text {
+        font-size: 14px;
+    }
+
+    .emploiment__icon {
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,36 @@
+.footer {
+    padding: 82px 0 50px 0;
+}
+
+.footer__link {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.footer__confidence {
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.footer__nav {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 21px 0;
+    }
+
+    .footer__nav {
+        margin-bottom: 20px;
+    }
+
+    .footer__link {
+        padding: 7px;
+    }
+}

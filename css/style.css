@@ -1,4 +1,4 @@
-html {
+/* html {
     position: relative;
     box-sizing: border-box;
     scroll-behavior:smooth;
@@ -31,11 +31,6 @@ img, svg {
     height: auto;
 }
 
-/* button {
-    padding: 0;
-    cursor: pointer;
-} */
-
 a {
     text-decoration: none;
     color: inherit;
@@ -55,12 +50,6 @@ figure,
 fieldset {
     margin: 0;
 }
-
-
-/* .section {
-    padding: 50px 0;
-} */
-
 
 /* .button {
     border-radius: 10px;
@@ -103,11 +92,12 @@ footer {
     line-height: 105.1%; /* 33.632px */
     letter-spacing: -0.64px;
     margin-bottom: 30px;
-}
+} */
+
 
 /* Header */
 
-.header__container {
+/* .header__container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -155,6 +145,7 @@ justify-content: space-between;
     .header {
         padding: 12px 0;
     }
+
     .header__logo--1 {
         width: 56px;
         height: 36px;
@@ -169,7 +160,13 @@ justify-content: space-between;
         width: 39px;
         height: 30px;
     }
-}
+
+    .navbar-toggler {
+        padding: 0;
+        /* width: 30px !important;
+        height: 30px !important; */
+    }
+} */
 
 
 /* Banner */
@@ -203,6 +200,7 @@ justify-content: space-between;
     font-weight: 600;
     line-height: 21px; /* 131.25% */
     margin-bottom: 44px;
+    white-space: pre-line;
 }
 
 .banner__title {
@@ -226,9 +224,28 @@ justify-content: space-between;
     margin-bottom: 30px;
 }
 
+
+@media (max-width: 480px) {
+    .banner__btn {
+        padding: 4px 25px 5px 27px;
+        font-size: 0.75em;
+        margin-bottom: 10px;
+    }
+
+    .banner__subtitle {
+        margin-bottom: 15px;
+    }
+
+    .banner__title {
+        font-size: 18px;
+        line-height: 25px; /* 138.889% */
+        margin-bottom: 10px;
+
+    }
+}
 /* Emploiment */
 
-.emploiment {
+/* .emploiment {
     padding: 38px 0;
 }
 
@@ -241,7 +258,7 @@ justify-content: space-between;
     font-style: normal;
     font-weight: 400;
     line-height: 17.6px;
-}
+} */
 
 
 
