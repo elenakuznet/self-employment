@@ -40,8 +40,12 @@
 }
 
 .banner__text {
-    font-size: 1.3rem;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
     margin-bottom: 25px;
+    white-space: pre-line;
 }
 
 .banner__item {
@@ -74,6 +78,8 @@
         font-size: 14px;
         line-height: 20px; /* 142.857% */
         margin-bottom: 20px;
+        text-align: center;
+        max-width: 222px;
     }
 
     .banner__item {

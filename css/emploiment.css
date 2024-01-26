@@ -13,6 +13,10 @@
     line-height: 17.6px;
 }
 
+.card-text {
+    white-space: pre-line;
+}
+
 
 @media (max-width: 480px) {
     .emploiment {
