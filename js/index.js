@@ -4,12 +4,6 @@ jQuery(function($){
     $("#tel").mask("+7 (999) 999-9999");
 });
 
-// $(document).ready(function() {
-//     $("#tel").mask("+7 (999) 999-9999");
-// })
-
-
-
 
 //отослать форму
 
@@ -24,10 +18,6 @@ form.submit(function(event) {
         success(data) {
             const [{name, tel, email}] = form;
             $('.message').text('Спасибо, ваша заявка принята!')
-            // form.slideUp(300, function() {
-            //     tel.value = '';
-            //     email.value = '';
-            // }); 
             console.log(data);
             $('.name').val('');
             $('.mobile').val('');
