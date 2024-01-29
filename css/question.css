@@ -93,7 +93,7 @@
     }
 
     .accordion-button {
-        padding: 0;
+        padding: 10px;
         color: #444;
         font-family: Roboto;
         font-size: 14px;

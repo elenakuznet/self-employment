@@ -2,11 +2,23 @@
     padding: 82px 0 50px 0;
 }
 
+.footer__col {
+    padding: 0;
+    width: unset;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .footer__link {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 21px;
+    padding: 0;
 }
 
 .footer__confidence {
@@ -19,6 +31,7 @@
 
 .footer__nav {
     margin-bottom: 100px;
+    gap: 77px;
 }
 
 @media (max-width: 480px) {
@@ -27,10 +40,11 @@
     }
 
     .footer__nav {
+        gap: 20px;
         margin-bottom: 20px;
     }
 
     .footer__link {
-        padding: 7px;
+        /* padding: 7px; */
     }
 }
