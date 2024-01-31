@@ -18,7 +18,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <ul class="nav justify-content-end d-none d-lg-flex">
+            <ul class=" header__top nav justify-content-end d-none d-lg-flex ">
                 <li class="nav-item">
                     <a class="nav-link header__link" aria-current="page" href="#">Личный кабинет </a>
                 </li>
@@ -32,22 +32,23 @@
 
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="header__container">
-                    <a class="navbar-brand" href="#">
-                        <img class="header__logo--1" src="img/mybusiness.png" class="img-fluid" alt="Лого мой бизнес" width="100" height="64">
-                    </a>
-                    <a class="navbar-brand" href="#">
-                        <img class="header__logo--2" src="img/fiako.png" class="img-fluid" alt="Лого фиако" width="60" height="59">
-                    </a>
-                    <a class="navbar-brand" href="#">
-                        <img class="header__logo--3" src="img/kurgan.png" class="img-fluid" alt="Лого Курган" width="70" height="53">
-                    </a>
-
+                    <div class="logo-wrapper">
+                        <a class="navbar-brand header__brand" href="#">
+                            <img class="header__logo--1" src="img/mybusiness.png" class="img-fluid" alt="Лого мой бизнес" width="100" height="64">
+                        </a>
+                        <a class="navbar-brand header__brand" href="#">
+                            <img class="header__logo--2" src="img/fiako.png" class="img-fluid" alt="Лого фиако" width="60" height="59">
+                        </a>
+                        <a class="navbar-brand header__brand" href="#">
+                            <img class="header__logo--3" src="img/kurgan.png" class="img-fluid" alt="Лого Курган" width="70" height="53">
+                        </a>
+                    </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav header__nav">
                         <li class="nav-item">
                             <a class="nav-link header__link" aria-current="page" href="#">Меры поддержки</a>
                         </li>
@@ -83,9 +84,9 @@
 
     <main>
         <!-- Banner -->
-        <section class="bg-white">
+        <section class="bg-white banner">
             <div class="container">
-                <div class="banner">
+                <div class="banner__box">
                     <div class="row">
                         <div class="col-sm-10 col-xs-12">
                             <button class="banner__btn btn btn-danger">Подать заяку</button>
@@ -99,35 +100,63 @@
                             <p class="banner__text">Каждый найдет здесь интересующую услугу, а любой самозанятый может заявить о своем проекте и оставить заявку на размещение.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-10 col-xs-12">
+                    <div class="plus">
+
                             <div class="row">
-                                <div class="banner__item">
-                                    <img src="img/check-fill.svg" class="img-fluid" alt="Иконка">
-                                    <p class="text-accent">Получи до 350 000₽ на  развитие</p>
+                                <div class="col-md-4 col-sm-10 col-xs-12">
+                                    <div class="banner__item">
+                                        <img src="img/check-fill.svg" class="img-fluid plus__img" alt="Иконка">
+                                        <p class="text-accent">Получи до 350 000₽ на  развитие</p>
+                                    </div>
                                 </div>
+
+                                <div class="col-md-4 col-sm-10 col-xs-12">
+                                    <div class="banner__item">
+                                        <img src="img/check-fill.svg" class="img-fluid plus__img" alt="Иконка">
+                                        <p class="text-accent">Подготовь бизнес-план бесплатно</p>
+                                    </div>
+                                </div>
+
                             </div>
+
+
                             <div class="row">
+                                <div class="col-md-4 col-sm-10 col-xs-12">
+                                    <div class="banner__item">
+                                        <img src="img/check-fill.svg" class="img-fluid plus__img" alt="Иконка">
+                                        <p class="text-accent">Зарегистрируйте товарный знак за&nbsp;0₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-10 col-xs-12">
+                                    <div class="banner__item banner__item--last">
+                                        <img src="img/check-fill.svg" class="img-fluid plus__img" alt="Иконка">
+                                        <p class="text-accent">Забери 30 000₽ на рекламу </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- <div class="row">
                                 <div class="banner__item">
-                                    <img src="img/check-fill.svg" class="img-fluid" alt="Иконка">
+                                    <img src="img/check-fill.svg" class="img-fluid plus__img" alt="Иконка">
                                     <p class="text-accent">Зарегистрируйте товарный знак за 0₽</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-10 col-md-4 col-xs-12">
+                            </div> -->
+                        
+                        <!-- <div class="col-sm-10 col-md-4 col-xs-12">
                             <div class="row">
                                 <div class="banner__item">
-                                    <img src="img/check-fill.svg" class="img-fluid" alt="Иконка">
+                                    <img src="img/check-fill.svg" class="img-fluid plus__img" alt="Иконка">
                                     <p class="text-accent">Подготовь безнес-план бесплатно</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="banner__item">
-                                    <img src="img/check-fill.svg" alt="Иконка">
+                                    <img src="img/check-fill.svg" class="img-fluid plus__img" alt="Иконка">
                                     <p class="text-accent">Забери 30 000₽ на рекламу </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <img src="img/banner-bg.png" class="img-fluid banner__image d-none d-md-block" alt="Обложка">
                     <img src="img/banner-mb.png" class="img-fluid d-md-none" alt="Мобильная версия обложки">
@@ -137,62 +166,62 @@
 
         <!-- Emploiment -->
 
-        <section class="emploiment">
+        <section class="employment">
             <div class="container">
                 <h2 class="section__title text-light">Кто такие самозанятые?</h2>
                 
-                    <div class="row emploiment__row g-3">
+                    <div class="row employment__row g-2">
                         <div class="col-md-6 col-xs-12 h-auto">
-                            <div class="h-100 card py-2 d-flex flex-wrap align-items-center">
-                                <img src="img/fluent_document.svg" style="width: 60px;" class="emploiment__icon img-fluid card-img-top" alt="Иконка">
+                            <div class="employment__card employment__card--1 h-100 card  d-flex flex-wrap align-items-center">
+                                <img src="img/fluent_document.svg" class="employment__icon img-fluid card-img-top" alt="Иконка">
                                 <div class="card-body">
-                                    <p class="emploiment__text card-text text-center">Осуществляют все расчеты через приложение "Мой налог" без
+                                    <p class="employment__text card-text text-center">Осуществляют все расчеты через приложение "Мой налог" без
                                         сложных расчетов и сдачи отчетности</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-12 h-auto">
-                            <div class="h-100 card py-2 d-flex flex-wrap align-items-center">
-                                <img src="img/user-tie.svg" style="width: 60px;" class="emploiment__icon img-fluid card-img-top" alt="Иконка">
+                            <div class="employment__card employment__card--2 h-100 card d-flex flex-wrap align-items-center">
+                                <img src="img/user-tie.svg" class="employment__icon img-fluid card-img-top" alt="Иконка">
                                 <div class="card-body">
-                                    <p class="emploiment__text card-text text-center">Работают сами на себя без
+                                    <p class="employment__text card-text text-center">Работают сами на себя без
                                         сотрудников</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-12 h-auto">
-                            <div class="h-100 card py-2 d-flex flex-wrap align-items-center">
-                            <img src="img/check-bold.svg" style="width: 60px;" class="emploiment__icon img-fluid card-img-top" alt="Иконка">
-                            <div class="card-body">
-                                <p class="emploiment__text card-text text-center">Выдают электронные чеки своим клиентам</p>
+                            <div class="employment__card employment__card--3 h-100 card d-flex flex-wrap align-items-center">
+                                <img src="img/check-bold.svg" class="employment__icon img-fluid card-img-top" alt="Иконка">
+                                <div class="card-body">
+                                    <p class="employment__text card-text text-center">Выдают электронные чеки своим клиентам</p>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </div>
 
-                    <div class="row g-3">
+                    <div class="row g-2">
                         <div class="col-md-3 col-xs-12 h-auto">
-                            <div class="h-100 card py-2 d-flex flex-wrap align-items-center">
-                                <img src="img/certificate-filled.svg" style="width: 60px;" class="emploiment__icon img-fluid card-img-top" alt="Иконка">
+                            <div class="employment__card employment__card--4 h-100 card d-flex flex-wrap align-items-center">
+                                <img src="img/certificate-filled.svg" class="employment__icon img-fluid card-img-top" alt="Иконка">
                                 <div class="card-body">
-                                    <p class="emploiment__text card-text  text-center">Могут получать официальные справки о доходах</p>
+                                    <p class="employment__text card-text  text-center">Могут получать официальные справки о&nbsp;доходах</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-12 h-auto">
-                            <div class="h-100 card py-2 d-flex flex-wrap align-items-center">
-                                <img src="img/fluent_money.svg" style="width: 60px;" class="emploiment__icon img-fluid card-img-top" alt="Иконка">
+                            <div class="employment__card employment__card--5 h-100 card d-flex flex-wrap align-items-center">
+                                <img src="img/fluent_money.svg" style="width: 60px;" class="employment__icon img-fluid card-img-top" alt="Иконка">
                                 <div class="card-body">
-                                    <p class="emploiment__text card-text text-center">Годовой доход не более
-                                        2.4 млн. руб.</p>
+                                    <p class="employment__text card-text text-center">Годовой доход не&nbsp;более
+                                        2.4&nbsp;млн. руб.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-xs-12 h-auto">
-                            <div class="h-100 card py-2 d-flex flex-wrap align-items-center">
-                                <img src="img/discount.svg" style="width: 60px;" class="emploiment__icon img-fluid card-img-top" alt="Иконка">
+                            <div class="employment__card employment__card--6 h-100 card d-flex flex-wrap align-items-center">
+                                <img src="img/discount.svg" class="employment__icon img-fluid card-img-top" alt="Иконка">
                                 <div class="card-body">
-                                    <p class="emploiment__text card-text text-center">Платят только налог на профессиональный доход 4% или 6% 
+                                    <p class="employment__text card-text text-center">Платят только налог на профессиональный доход 4% или 6% 
                                         (при работе с юридическими лицами)</p>
                                 </div>
                             </div>
@@ -204,13 +233,13 @@
 
         <!-- Success -->
 
-        <section class="success bg-white ">
+        <section class="success bg-white">
             <div class="container">
                 <h2 class="section__title">Успешные самозанятые:</h2>
 
-                <!-- Carousel -->
+                <!-- Carousel data-ride="carousel" -->
                 <div class="carousel__container">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -218,7 +247,7 @@
                             </ol>
                             <div class="carousel-inner success__inner">
                                 <div class="carousel-item active">
-                                <div class="row">
+                                <div class="row success__row">
                                     <div class="col d-none d-lg-block success__item">
                                         <div class="card success__container">
                                             <img src="img/natalya1.png" class="img-fluid card-img-top success__image" alt="Наталья Колесова фото">
@@ -233,7 +262,7 @@
                                                 </div>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col success__item">
                                         <div class="card success__container">
                                             <img src="img/natalya1.png" class="img-fluid card-img-top success__image" alt="Наталья Колесова фото">
                                             <div class="card-body success__card">
@@ -247,7 +276,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col d-none d-md-block">
+                                    <div class="col d-none d-md-block success__item">
                                         <div class="card success__container">
                                             <img src="img/natalya1.png" class="img-fluid card-img-top success__image" alt="Наталья Колесова фото">
                                             <div class="card-body success__card">
@@ -259,58 +288,12 @@
                                                 <p class="card-text success__text">Создательница бренда Наталья отметила, что у неё остались самые приятные впечатления от
                                                     участия. Это новые знакомства, общение и активные продажи.</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col d-none d-lg-block">
-                                        <div class="card success__container">
-                                            <img src="img/natalya1.png" class="img-fluid card-img-top success__image" alt="Наталья Колесова фото">
-                                            <div class="card-body success__card">
-                                                <h5 class="card-title success__name">Наталья Колесова</h5>
-                                                <h6 class="card-subtitle success__sub">Создатель бренда «CheerfulKids »</h6>
-                                                <p class="card-text success__text">Онлайн - магазин детской и подростковой одежды CheerfulKids начал работу 5 месяцев назад и участвовал в Маркете дважды.</p>
-                                                <p class="card-text success__text">Летнее участие стало для магазина бесплатным благодаря квоте, предоставленной центром «Мой бизнес».</p>
-                                                <p class="card-text success__text">Форма маркет даёт хороший старт начинающим предпринимателям и самозанятым Кургана.</p>
-                                                <p class="card-text success__text">Создательница бренда Наталья отметила, что у неё остались самые приятные впечатления от
-                                                    участия. Это новые знакомства, общение и активные продажи.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card success__container">
-                                            <img src="img/natalya1.png" class="img-fluid card-img-top success__image" alt="Наталья Колесова фото">
-                                            <div class="card-body success__card">
-                                                <h5 class="card-title success__name">Наталья Колесова</h5>
-                                                <h6 class="card-subtitle success__sub">Создатель бренда «CheerfulKids »</h6>
-                                                <p class="card-text success__text">Онлайн - магазин детской и подростковой одежды CheerfulKids начал работу 5 месяцев назад и участвовал в Маркете дважды.</p>
-                                                <p class="card-text success__text">Летнее участие стало для магазина бесплатным благодаря квоте, предоставленной центром «Мой бизнес».</p>
-                                                <p class="card-text success__text">Форма маркет даёт хороший старт начинающим предпринимателям и самозанятым Кургана.</p>
-                                                <p class="card-text success__text">Создательница бренда Наталья отметила, что у неё остались самые приятные впечатления от
-                                                    участия. Это новые знакомства, общение и активные продажи.</p>
-                                                </div>
-                                        </div>
-                                    </div>
-                                    <div class="col d-none d-md-block">
-                                        <div class="card success__container">
-                                            <img src="img/natalya1.png" class="img-fluid card-img-top success__image" alt="Наталья Колесова фото">
-                                            <div class="card-body success__card">
-                                                <h5 class="card-title success__name">Наталья Колесова</h5>
-                                                <h6 class="card-subtitle success__sub">Создатель бренда «CheerfulKids »</h6>
-                                                <p class="card-text success__text">Онлайн - магазин детской и подростковой одежды CheerfulKids начал работу 5 месяцев назад и участвовал в Маркете дважды.</p>
-                                                <p class="card-text success__text">Летнее участие стало для магазина бесплатным благодаря квоте, предоставленной центром «Мой бизнес».</p>
-                                                <p class="card-text success__text">Форма маркет даёт хороший старт начинающим предпринимателям и самозанятым Кургана.</p>
-                                                <p class="card-text success__text">Создательница бренда Наталья отметила, что у неё остались самые приятные впечатления от
-                                                    участия. Это новые знакомства, общение и активные продажи.</p>
-                                                </div>
                                         </div>
                                     </div>
                                 </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="row">
+                                    <div class="row success__row">
                                         <div class="col d-none d-lg-block">
                                             <div class="card success__container">
                                                 <img src="img/natalya1.png" class="img-fluid card-img-top success__image" alt="Наталья Колесова фото">
@@ -322,24 +305,10 @@
                                                     <p class="card-text success__text">Форма маркет даёт хороший старт начинающим предпринимателям и самозанятым Кургана.</p>
                                                     <p class="card-text success__text">Создательница бренда Наталья отметила, что у неё остались самые приятные впечатления от
                                                         участия. Это новые знакомства, общение и активные продажи.</p>
-                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    <div class="col">
-                                        <div class="card success__container">
-                                            <img src="img/natalya1.png" class="img-fluid card-img-top success__image" alt="Наталья Колесова фото">
-                                            <div class="card-body success__card">
-                                                <h5 class="card-title success__name">Наталья Колесова</h5>
-                                                <h6 class="card-subtitle success__sub">Создатель бренда «CheerfulKids »</h6>
-                                                <p class="card-text success__text">Онлайн - магазин детской и подростковой одежды CheerfulKids начал работу 5 месяцев назад и участвовал в Маркете дважды.</p>
-                                                <p class="card-text success__text">Летнее участие стало для магазина бесплатным благодаря квоте, предоставленной центром «Мой бизнес».</p>
-                                                <p class="card-text success__text">Форма маркет даёт хороший старт начинающим предпринимателям и самозанятым Кургана.</p>
-                                                <p class="card-text success__text">Создательница бренда Наталья отметила, что у неё остались самые приятные впечатления от
-                                                    участия. Это новые знакомства, общение и активные продажи.</p>
-                                                </div>
-                                        </div>
-                                    </div>
-                                    <div class="col d-none d-md-block">
+                                        <div class="col">
                                             <div class="card success__container">
                                                 <img src="img/natalya1.png" class="img-fluid card-img-top success__image" alt="Наталья Колесова фото">
                                                 <div class="card-body success__card">
@@ -353,19 +322,84 @@
                                                     </div>
                                             </div>
                                         </div>
+                                        <div class="col d-none d-md-block">
+                                            <div class="card success__container">
+                                                <img src="img/natalya1.png" class="img-fluid card-img-top success__image" alt="Наталья Колесова фото">
+                                                <div class="card-body success__card">
+                                                    <h5 class="card-title success__name">Наталья Колесова</h5>
+                                                    <h6 class="card-subtitle success__sub">Создатель бренда «CheerfulKids »</h6>
+                                                    <p class="card-text success__text">Онлайн - магазин детской и подростковой одежды CheerfulKids начал работу 5 месяцев назад и участвовал в Маркете дважды.</p>
+                                                    <p class="card-text success__text">Летнее участие стало для магазина бесплатным благодаря квоте, предоставленной центром «Мой бизнес».</p>
+                                                    <p class="card-text success__text">Форма маркет даёт хороший старт начинающим предпринимателям и самозанятым Кургана.</p>
+                                                    <p class="card-text success__text">Создательница бренда Наталья отметила, что у неё остались самые приятные впечатления от
+                                                        участия. Это новые знакомства, общение и активные продажи.</p>
+                                                    </div>
+                                            </div>
                                         </div>
                                     </div>
-                            </div>
-                                
-                            </div>
+                                </div>
+                                <div class="carousel-item">
+                                        <div class="row success__row">
+                                            <div class="col d-none d-lg-block">
+                                                <div class="card success__container">
+                                                    <img src="img/natalya1.png" class="img-fluid card-img-top success__image" alt="Наталья Колесова фото">
+                                                    <div class="card-body success__card">
+                                                        <h5 class="card-title success__name">Наталья Колесова</h5>
+                                                        <h6 class="card-subtitle success__sub">Создатель бренда «CheerfulKids »</h6>
+                                                        <p class="card-text success__text">Онлайн - магазин детской и подростковой одежды CheerfulKids начал работу 5 месяцев назад и участвовал в Маркете дважды.</p>
+                                                        <p class="card-text success__text">Летнее участие стало для магазина бесплатным благодаря квоте, предоставленной центром «Мой бизнес».</p>
+                                                        <p class="card-text success__text">Форма маркет даёт хороший старт начинающим предпринимателям и самозанятым Кургана.</p>
+                                                        <p class="card-text success__text">Создательница бренда Наталья отметила, что у неё остались самые приятные впечатления от
+                                                            участия. Это новые знакомства, общение и активные продажи.</p>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        <div class="col">
+                                            <div class="card success__container">
+                                                <img src="img/natalya1.png" class="img-fluid card-img-top success__image" alt="Наталья Колесова фото">
+                                                <div class="card-body success__card">
+                                                    <h5 class="card-title success__name">Наталья Колесова</h5>
+                                                    <h6 class="card-subtitle success__sub">Создатель бренда «CheerfulKids »</h6>
+                                                    <p class="card-text success__text">Онлайн - магазин детской и подростковой одежды CheerfulKids начал работу 5 месяцев назад и участвовал в Маркете дважды.</p>
+                                                    <p class="card-text success__text">Летнее участие стало для магазина бесплатным благодаря квоте, предоставленной центром «Мой бизнес».</p>
+                                                    <p class="card-text success__text">Форма маркет даёт хороший старт начинающим предпринимателям и самозанятым Кургана.</p>
+                                                    <p class="card-text success__text">Создательница бренда Наталья отметила, что у неё остались самые приятные впечатления от
+                                                        участия. Это новые знакомства, общение и активные продажи.</p>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="col d-none d-md-block">
+                                                <div class="card success__container">
+                                                    <img src="img/natalya1.png" class="img-fluid card-img-top success__image" alt="Наталья Колесова фото">
+                                                    <div class="card-body success__card">
+                                                        <h5 class="card-title success__name">Наталья Колесова</h5>
+                                                        <h6 class="card-subtitle success__sub">Создатель бренда «CheerfulKids »</h6>
+                                                        <p class="card-text success__text">Онлайн - магазин детской и подростковой одежды CheerfulKids начал работу 5 месяцев назад и участвовал в Маркете дважды.</p>
+                                                        <p class="card-text success__text">Летнее участие стало для магазина бесплатным благодаря квоте, предоставленной центром «Мой бизнес».</p>
+                                                        <p class="card-text success__text">Форма маркет даёт хороший старт начинающим предпринимателям и самозанятым Кургана.</p>
+                                                        <p class="card-text success__text">Создательница бренда Наталья отметила, что у неё остались самые приятные впечатления от
+                                                            участия. Это новые знакомства, общение и активные продажи.</p>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                </div>
+                                </div>
+                        </div>
 
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <!-- <span class="sr-only">Previous</span> -->
-                                </a>
+                                <span class="carousel-control-prev-icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
+                                        <path d="M0.261731 10.4155L9.66617 19.3761C9.82309 19.5257 10.0316 19.6091 10.2484 19.6091C10.4652 19.6091 10.6736 19.5257 10.8305 19.3761L10.8407 19.366C10.917 19.2935 10.9778 19.2062 11.0193 19.1094C11.0609 19.0127 11.0823 18.9085 11.0823 18.8032C11.0823 18.6979 11.0609 18.5937 11.0193 18.497C10.9778 18.4002 10.917 18.3129 10.8407 18.2404L1.98467 9.80291L10.8407 1.36878C10.917 1.29626 10.9778 1.20898 11.0193 1.11223C11.0609 1.01548 11.0823 0.911289 11.0823 0.806001C11.0823 0.700712 11.0609 0.596525 11.0193 0.499774C10.9778 0.403026 10.917 0.315736 10.8407 0.243219L10.8305 0.233095C10.6736 0.0835052 10.4652 5.6763e-05 10.2484 5.67725e-05C10.0316 5.6782e-05 9.82309 0.0835052 9.66617 0.233095L0.261731 9.19372C0.179023 9.27252 0.113178 9.3673 0.0681883 9.4723C0.0231983 9.57731 -4.33563e-07 9.69036 -4.2857e-07 9.80459C-4.23576e-07 9.91883 0.0231983 10.0319 0.0681883 10.1369C0.113178 10.2419 0.179023 10.3367 0.261731 10.4155Z" fill="#ED5338"/>
+                                    </svg>
+                                </span>
+                            </a>
                             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <!-- <span class="sr-only">Next</span> -->
+                                <span class="carousel-control-next-icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
+                                        <path d="M10.8205 9.19366L1.41611 0.233036C1.25919 0.0834476 1.05071 -4.38494e-07 0.833919 -4.4797e-07C0.617124 -4.57446e-07 0.408649 0.0834475 0.251732 0.233035L0.241606 0.243161C0.165272 0.315678 0.104488 0.402966 0.062953 0.499716C0.0214176 0.596465 -1.93798e-06 0.700653 -1.94258e-06 0.805942C-1.94718e-06 0.91123 0.0214176 1.01542 0.0629529 1.11217C0.104488 1.20892 0.165272 1.29621 0.241606 1.36872L9.09761 9.80622L0.241605 18.2403C0.165271 18.3129 0.104488 18.4002 0.0629522 18.4969C0.0214168 18.5937 -2.72466e-06 18.6978 -2.72926e-06 18.8031C-2.73386e-06 18.9084 0.0214168 19.0126 0.0629522 19.1094C0.104488 19.2061 0.165271 19.2934 0.241605 19.3659L0.251731 19.376C0.408649 19.5256 0.617123 19.6091 0.833918 19.6091C1.05071 19.6091 1.25919 19.5256 1.41611 19.376L10.8205 10.4154C10.9033 10.3366 10.9691 10.2418 11.0141 10.1368C11.0591 10.0318 11.0823 9.91877 11.0823 9.80454C11.0823 9.6903 11.0591 9.57725 11.0141 9.47224C10.9691 9.36724 10.9033 9.27246 10.8205 9.19366Z" fill="#ED5338"/>
+                                    </svg>
+                                </span>
                             </a>
                     </div>
             </div>
@@ -377,7 +411,7 @@
             <div class="container">
                 <h2 class="section__title text-white">Для самозанятых доступна господдержка:</h2>
                     
-                <div class="row align-items-center">
+                <div class="row support__row align-items-center">
                     <div class="col-md-4 col-xs-12" >
                         <div class="d-flex support__list">
                             <img src="img/bookmark.svg" class="support__icon" alt="Иконка">
@@ -410,19 +444,12 @@
         <section class="questions bg-white text-light">
             <div class="container">
                 <div class="video-box">
-                    <div class="ratio ratio-16x9 ">
-                        <iframe  src="https://www.youtube.com/embed/YwX_xwlvcrs?si=uK32kV4vJqQZoSBH" allowfullscreen></iframe>
+                    <div class="ratio ratio-16x9">
+                        <iframe class="video"  src="https://www.youtube.com/embed/YwX_xwlvcrs?si=uK32kV4vJqQZoSBH" allowfullscreen></iframe>
                     </div>
                 </div>
-
-                <!-- <div class="video">
-                    <img src="img/video-img.png" alt="">
-                </div> -->
             
-
-                
                 <h2 class="section__title text-main">Частые вопросы о самозанятости:</h2>
-
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
@@ -467,7 +494,7 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingFive">
+                            <h2 class="accordion-header accordion-header--last" id="flush-headingFive">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                                 Какие ограничения по сумме дохода?
                             </button>
@@ -477,70 +504,6 @@
                             </div>
                         </div>
                     </div>
-
-                <!-- Accordion
-                <div class="accordion accordion-flush" id="questions">
-                    <!-- Item 1 -->
-                    <!-- <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
-                            Что такое «Налог на профессиональный доход»?
-                        </button>
-                    </h2>
-                    <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At necessitatibus quos dolorum cupiditate obcaecati voluptatum molestias culpa, eaque ratione. Odio mollitia facilis dolor quo? Adipisci consectetur incidunt inventore cum fugit temporibus, assumenda, natus blanditiis minus illum ex ab commodi molestias dolores sapiente ipsum veritatis eius vero animi magni nesciunt rerum.</div>
-                    </div>
-                    </div> -->
-
-                    <!-- Item 2 -->
-                    <!-- <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
-                                Как стать официально самозанятым?
-                            </button>
-                        </h2>
-                        <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam magni autem aliquam corporis. Pariatur ipsam inventore dicta sunt numquam autem quisquam doloremque porro. Molestiae libero atque numquam. Eius ipsam amet aut? Mollitia vero quam dolore a sed quas nobis! Ut ullam facere tenetur debitis illum quam recusandae hic, ipsam nobis?</div>
-                        </div>
-                    </div> -->
-
-                    <!-- Item 3 -->
-                    <!-- <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
-                                Кому подходит этот налоговый режим?
-                            </button>
-                        </h2>
-                        <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia eius architecto vitae nesciunt placeat ipsam optio, rerum doloribus. Dolorum vel iste nostrum, dicta autem accusamus. Dolorem, esse veniam nulla laboriosam accusamus doloribus, veritatis, mollitia reiciendis alias quam quaerat deleniti voluptas ullam magni atque pariatur eius amet dolor velit! Consequatur, ipsum?</div>
-                        </div>
-                    </div> -->
-
-                    <!-- Item 4 -->
-
-                    <!-- <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
-                            Как рассчитать сумму налога к уплате?
-                        </button>
-                        </h2>
-                        <div id="question-four" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem fugiat dignissimos itaque, beatae voluptatem commodi libero quae, eligendi repudiandae magni assumenda necessitatibus sed quo fuga voluptas adipisci accusamus, ab porro est quos sequi laudantium quod! Veritatis, nulla modi fugiat mollitia quibusdam ipsa in maxime placeat dolorum, animi dolore commodi hic!</div>
-                        </div>
-                    </div> -->
-
-                    <!-- Item 5 -->
-                    <!-- <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
-                            Какие ограничения по сумме дохода?
-                        </button>
-                        </h2>
-                        <div id="question-five" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, mollitia quam ea, veritatis possimus eos praesentium incidunt iure adipisci, accusamus aliquam eius placeat qui corrupti! Aliquam, maxime rem cum provident voluptate debitis animi ratione in eum autem nisi minima, ipsum quas odit non adipisci at natus commodi sit doloribus porro.</div>
-                        </div>
-                    </div> -->
-                <!-- </div>  -->
             </div>
         </section>
 
@@ -556,7 +519,7 @@
                 <div>
                     <h3 class="registration__subtitle text-main">Способы регистрации:</h3>
 
-                    <ul class="registration__list text-white mb-5">
+                    <ul class="registration__list text-white">
                         <li>
                             <div class="registration__item">
                                 <img src="img/mobile-app.svg" class="img-fluid " alt="">
@@ -595,7 +558,7 @@
                         <li>
                             <div class="registration__item">
                                 <img src="img/gosuslug.svg" class="img-fluid" alt="">
-                                <p class="registration__text">С помощью учетной записи Единого портала государственных и муниципальных услуг.</p>
+                                <p class="registration__text text-main">С помощью учетной записи Единого портала государственных и муниципальных услуг.</p>
                             </div>
                         </li>
                     </ul>
@@ -614,9 +577,9 @@
             </div>
         </section>
 
-
         <section class="bg-white form">
-            <div class="container form__container d-flex">
+            <div class="container"> 
+                <div class="form__container d-flex">
                         <form class="form__content" action="https://jsonplaceholder.typicode.com/posts"
                         method="post">
                             <div class="input-wrapper">
@@ -630,12 +593,13 @@
                             </div>
                             <button type="submit" class="btn form-btn">Отправить</button>
                             <p class="message"></p>
-                            <p class="form-text">Отправляя свои персональные данные, я даю согласие на их использование и обработку в
+                            <p class="form__text">Отправляя свои персональные данные, я даю согласие на их использование и обработку в
                                 соответствии с <a class="form__link" href="">Политикой конфиденциальности</a>.</p>
                         </form>
 
                     <!-- <img src="img/girl.png" class="img-fluid" alt=""> -->
                 
+                </div>
             </div>
         </section>
 

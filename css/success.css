@@ -3,17 +3,22 @@
 }
 
 .success__item {
-    padding-left: 0;
+    padding: 0;
+}
+
+.success__row {
+    gap: 10px;
 }
 
 .success__image {
     position: absolute;
-    left: 0; 
+    /* left: 0;  */
+    left: 53px;
     right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
+    /* margin-left: auto; 
+    margin-right: auto;  */
     width: 280px; /* Need a specific value to work */
-    top: -19%;
+    top: -20%;
     z-index: 100;
     border-radius: 300px;
     outline: 1px solid #CE9B6B;
@@ -25,10 +30,12 @@
 }
 
 .success__card {
+    /* max-width: 360px; */
     /* padding-top: 180px; */
     padding-top: 190px;
     padding-left: 23px;
     padding-right: 17px;
+    padding-bottom: 20px;
     position: relative;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
@@ -68,14 +75,14 @@
     margin-bottom: 15px;
 }
 
-
 /* carusel */
 .carousel__container {
     position: relative;
 }
 
 .carousel {
-    max-width: 1100px;
+    /* max-width: 1100px; */
+    max-width: 1090px;
     margin: 0 auto;
 }
 
@@ -83,15 +90,14 @@
     /* padding-top: 150px; */
     /* padding-top: 12%; */
     padding-top: 12%;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
 }
 
 .carousel-control-prev-icon {
-    background-image: url(../img/arrow-left.svg);
+    
 }
 
 .carousel-control-next-icon {
-    background-image: url(../img/arrow-right.svg);
 }
 
 .carousel-control-prev {
@@ -114,8 +120,8 @@
 
 .carousel-indicators {
     display: flex;
-    /* justify-content: space-between; */
     gap: 10px;
+    margin-bottom: 0;
 }
 
 
@@ -136,9 +142,15 @@
     .success {
         padding: 40px 0;
     }
-    
+
     .success__card {
-        padding-top: 97px;
+        max-width: 260px;
+        padding-top: 92px;
+        /* padding-top: 86px; */
+        /* padding-top: 97px; */
+        padding-left: 13px;
+        padding-right: 7px;
+        padding-bottom: 12px;
     }
 
     .success__name {
@@ -171,8 +183,10 @@
 
     .carousel-inner {
         /* padding-top: 41%; */
-        padding-top: 44%;
-        padding-bottom: 20%;
+        /* padding-top: 44%; */
+        padding-top: 47%;
+        /* padding-bottom: 20%; */
+        padding-bottom: 13%;
     }
 
     .carousel-control-next, .carousel-control-prev {

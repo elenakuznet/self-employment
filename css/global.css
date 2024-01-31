@@ -98,12 +98,13 @@ footer {
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
-        line-height: 125%; /* 25px */
+        line-height: 123%;
+        /* line-height: 125%; 25px */
         letter-spacing: -0.4px;
         margin-bottom: 20px;
     }
 
-    .container {
+    .container {   
         padding: 0 20px;
     }
 }
@@ -111,5 +112,6 @@ footer {
 @media (max-width: 300px) {
     .container {
         max-width: 300px;
+        padding: 0 20px;
     }
 }
